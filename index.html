@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>
+        Roti Roll    
+    </title> 
+    <meta name="Roti Roll">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+    
+            
+        
+</head>
+<body>
+    <div id="container">
+    <article>
+        <header>
+            <a href="index.html"><img id="logo" src="images/rrlogo4.png"></a>
+            <img id="cart" src="images/cart1.png">
+            <nav id="main-nav-bar">
+                <span class="emp"><a href="about.html">ABOUT</a></span>
+                <span><a href="menu.html">MENU</a></span>
+                <span><a href="contact.html">CONTACT</a></span>
+            </nav>
+        </header>    
+        <main>    
+            <section id="banner">
+            <a href="menu.html#specials"><img id="mainimage" src="images/mainimage.jpg"></a>
+            </section>
+
+            <section id="specials">
+                <h1>LUNCH SPECIALS</h1>
+                    <h4 id="lunch-special"></h4>
+                    <h5 id="details">Lunch specials available Monday-Friday 11-2</h5>    
+                        <div class="grid">
+
+                            <p id ="grid-item1">
+                                Monday
+                            </p>
+                            <p id ="grid-item2">
+                                Tuesday
+                            </p>
+                            <p id ="grid-item3">
+                                Wednesday
+                            </p>
+                            <p id ="grid-item4">
+                                Thursday
+                            </p>
+                            <p id ="grid-item5">
+                                Friday
+                            </p>
+                            <div id ="grid-content">
+                                <img id="graphic"src="images/wednesday.png">
+                            </div>
+                        </div> 
+                
+            </section>    
+            
+        </main>    
+    </article>    
+    </div>
+</body>
+    <!--<script>
+        //window.onload = checkLunchSpecial;
+        //var currentTime = new Date();
+        //var todaysDate = currentTime.getDate();
+        //var currentHour = currentTime.getHours();
+        //var lunchSpecials = document.getElementById("specials");
+        //var specialsContent = document.getElementById("dailyspecial");
+        
+        var monday = document.querySelector("#m");
+        var tuesday = document.querySelector("#tu");
+        var wednesday = document.querySelector("#w");
+        var thursday = document.querySelector("#th");
+        var friday = document.querySelector("#f");
+        /*var weekday = new Array(7);
+        weekday[0] = "Sunday";
+        weekday[1] = "Monday";
+        weekday[2] = "Tuesday";
+        weekday[3] = "Wednesday";
+        weekday[4] = "Thursday";
+        weekday[5] = "Friday";
+        weekday[6] = "Saturday";
+
+       
+
+        monday.addEventListener("mouseover", doThisOnHover);
+        /*tuesday.addEventListener("mouseover", doThisOnHover);
+        wednesday.addEventListener"mouseover", doThisOnHover);
+        thursday.addEventListener("mouseover", doThisOnHover);
+        friday.addEventListener("mouseover", doThisOnHover);
+        monday.addEventListener("mouseout", onMouseOut);
+        tuesday.addEventListener("mouseout", onMouseOut);
+        wednesday.addEventListener"mouseout", onMouseOut);
+        thursday.addEventListener("mouseout", onMouseOut);
+        friday.addEventListener("mouseout", onMouseOut);
+        */
+
+        function doThisOnHover(){
+           //document.querySelector("#m").style.backgroundColor="yellow";
+            document.querySelector("m").innerHTML="this works." 
+            }
+            
+           
+
+        }
+        function onMouseOut(){
+           this.style.backgroundColor="#ccc";
+           
+
+        }
+        
+         
+        function onMouseClick(){
+           this.style.backgroundColor="red";
+           
+
+        }
+
+        function checkLunchSpecial(){
+           specialsContent.innerHTML = "Today";
+        //if ((currentHour>10 && currentHour<14) && (weekday.getDay()>1 && weekday.getDay)){
+            //get current date and assign it to a variable that I can
+
+        }
+
+
+    </script>-->    
+<script>
+    var c1 = document.querySelector("#grid-item1");
+    var c2 = document.querySelector("#grid-item2");
+    var c3 = document.querySelector("#grid-item3");
+    var c4 = document.querySelector("#grid-item4");
+    var c5 = document.querySelector("#grid-item5");
+    var content = document.querySelector("#grid-content");
+    var graphic = document.querySelector("#graphic");
+        
+    var currentTime = new Date();    
+        
+        
+    c1.addEventListener("mouseover", doThisOnHover);
+    c1.addEventListener("mouseout", doThisOnLeave);
+    c1.addEventListener("click", whenClicked);
+    c2.addEventListener("mouseover", doThisOnHover);
+    c2.addEventListener("mouseout", doThisOnLeave);
+    c2.addEventListener("click", whenClicked);    
+    c3.addEventListener("mouseover", doThisOnHover);
+    c3.addEventListener("mouseout", doThisOnLeave);
+    c3.addEventListener("click", whenClicked);    
+    c4.addEventListener("mouseover", doThisOnHover);
+    c4.addEventListener("mouseout", doThisOnLeave);
+    c4.addEventListener("click", whenClicked);    
+    c5.addEventListener("mouseover", doThisOnHover);
+    c5.addEventListener("mouseout", doThisOnLeave);
+    c5.addEventListener("click", whenClicked);    
+    
+    window.onload = checkLunchSpecial;    
+    
+    function checkLunchSpecial(){
+            var d = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+
+            var n = weekday[d.getDay()];
+            document.getElementById("lunch-special").innerHTML = "Today is " + n;
+            
+            if(n=="Monday"){
+            c1.style.backgroundColor = "#f4d650";
+            //content.innerHTML="Monday's special";
+            graphic.src="images/monday.png";    
+            }
+            else if(n=="Tuesday"){
+            c2.style.backgroundColor = "#f4d650";
+            //content.innerHTML="Tuesday's special";
+            graphic.src="images/tuesday.png";     
+            }
+            else if(n=="Wednesday"){
+            c3.style.backgroundColor = "#f4d650";
+            //content.innerHTML="Wednesday's special";
+            graphic.src="images/wednesday.png";    
+            }
+            else if(n=="Thursday"){
+            c4.style.backgroundColor = "#f4d650";
+            //content.innerHTML="Thursday's special";
+            graphic.src="images/thursday.png";    
+            }
+            else if(n=="Friday"){
+            c5.style.backgroundColor = "#f4d650";
+            //content.innerHTML="Friday's special";
+            graphic.src="images/friday.png";  
+            }
+            
+    }    
+        
+    function doThisOnHover(){
+            this.style.backgroundColor = "#bbb";
+            if(this.id=="grid-item1"){
+            c1.style.backgroundColor = "#e6d297";
+            //content.innerHTML="Monday's special";
+            graphic.src="images/monday.png";    
+            }
+            else if(this.id=="grid-item2"){
+            c2.style.backgroundColor = "#e6d297";
+            //content.innerHTML="Tuesday's special";    
+            graphic.src="images/tuesday.png";
+            }
+            else if(this.id=="grid-item3"){
+            c3.style.backgroundColor = "#e6d297";
+            //content.innerHTML="Wednesday's special";    
+            graphic.src="images/wednesday.png";
+            }
+            else if(this.id=="grid-item4"){
+            c4.style.backgroundColor = "#e6d297";
+            //content.innerHTML="Thursday's special";    
+            graphic.src="images/thursday.png";
+            }
+            else if(this.id=="grid-item5"){
+            c5.style.backgroundColor = "#e6d297";
+            //content.innerHTML="Friday's special";    
+            graphic.src="images/friday.png";
+            }
+        
+    } 
+    function doThisOnLeave(){
+        this.style.backgroundColor = "#ccc";
+        checkLunchSpecial();
+    }   
+    function whenClicked(){
+        this.style.backgroundColor = "white";
+    }      
+    </script>
+    
+    
+</html>
+  

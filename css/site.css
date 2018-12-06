@@ -1,0 +1,289 @@
+* {
+    
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+#about {
+    padding-right: 20px;
+}
+
+body{
+    
+    
+    background: url(images/bg6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    
+}
+
+#logo {
+    float: left;
+    padding-left: 50px;
+}
+
+#container{
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+header{
+    font-family: Arial, sans-serif;
+}
+
+#main-nav-bar {
+    
+    display: block;
+    top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    background-color:#fff;
+    text-align: right;
+    
+}
+
+#main-nav-bar a{
+    
+    font-size: 1.2em;
+    color: #000;
+    text-decoration: none;
+    padding:0px;
+    
+}
+
+
+#main-nav-bar a:hover{
+    
+    color: gray;
+}
+
+nav span{
+    padding:0px 40px;
+}
+
+div{
+    margin: 0px;
+}
+
+section img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%;
+}
+
+#specials{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%;    
+    padding:10px;
+    padding-bottom: 1.5em;
+    /*border-style: solid;*/
+    border-width: 1px;
+    background-color: #fff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#dailyspecial{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+#days{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#grid-content{
+    grid-column: 1/ span 5;
+    grid-row: 2;
+    display: inline-block;
+    border-style: solid;
+    padding-top: 1em; 
+    padding-bottom: 1em;
+    border-width: 1px;
+    text-align: center;
+    margin: 0px;
+    background-color: #fff;
+}
+#menu select{
+    max-width: 50px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+}
+#topics{
+    width: 100%;
+}
+.question{
+	border-style: none;
+	border-radius: 5px;
+    margin: 1em 0em;
+	background-color: #eee;
+	padding-bottom: 10px;
+    text-align: center;
+}
+.button{
+	background-color: #f4d650;
+  	border: none;
+  	color: black;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: block;
+  	font-size: 16px;
+    width: 20%;
+ 	margin-left: auto;
+    margin-right: auto;
+  	cursor: pointer;
+}
+
+
+#contact{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%;    
+    padding:10px;
+    background-color: #fff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#menu{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%;    
+    padding:10px;
+    background-color: #fff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+h1,section h2,h3,h4,h5,p{
+    text-align: center;
+    padding: 1em;
+}
+
+h4{
+    font-family: sans-serif;
+    font-size: 1em;
+}
+h5{
+    font-family: sans-serif;
+    font-size: .9em;
+    color: #777;
+}
+
+section p{
+    display: block;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+section .grid p{
+    width:100%;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #ccc;
+}
+
+section #video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:70%;
+    padding: 10px;
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+    
+}
+
+footer{
+    display: block;
+    width: 95%;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #444;
+}
+
+#mainimage{
+    padding: 10px;
+
+}
+
+#cart {
+    float: right;
+    padding-right: 40px;
+
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px)
+
+
+{
+    
+    
+}

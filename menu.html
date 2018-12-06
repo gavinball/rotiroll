@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>
+        Roti Roll    
+    </title> 
+    <meta name="Roti Roll">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+    
+            
+        
+</head>
+<body>
+    <div id="container">
+        <article>
+                <header>
+                    <a href="index.html"><img id="logo" src="images/rrlogo4.png"></a>
+                    <img id="cart" src="images/cart1.png">
+                    <nav id="main-nav-bar">
+                        <span class="emp"><a href="about.html">ABOUT</a></span>
+                        <span><a href="menu.html">MENU</a></span>
+                        <span><a href="contact.html">CONTACT</a></span>
+                    </nav>
+                </header>    
+                <main>    
+                    <section id="banner">
+                    <a href="menu.html#specials"><img id="mainimage" src="images/menu.jpg"></a>
+                    </section>
+
+                    <section id="menu">
+                        <h1>MENU</h1>
+                        <h5>COMBOS</h5>
+                            <form name = "quiz" onsubmit = "return onSubmit()">
+                    <div class = "question">
+                        <h3>Veggie</h3>
+                        <p>$6.99</p>
+                        <select id = 'q1' onclick="document.getElementById("q1")">
+                            <option value = ' '> </option>
+                            <option value = '1'>1</option>
+                            <option value = '2'>2</option>
+                        </select>
+                    </div>
+
+                    <div class = "question">
+                        <h3>Chicken</h3>
+                        <p>$6.99</p>
+                        <select id = 'q2'>
+                            <option value = ' '> </option>
+                            <option value = '1'>1</option>
+                            <option value = '2'>2</option>
+                        </select>
+                    </div>						
+
+                    <div class = "question">
+                        <h3>Curry Goat</h3>
+                        <p>$7.50</p>
+                        <select id = 'q3'>
+                            <option value = ' '> </option>
+                            <option value = '1'>1</option>
+                            <option value = '2'>2</option>
+                        </select>
+                    </div>
+
+                    <div class = "question">
+                        <h3>Stew Beef</h3>
+                        <p>$7.99</p>
+                        <select id = 'q4'>
+                            <option value = ' '> </option>
+                            <option value = '1'>1</option>
+                            <option value = '2'>2</option>
+                        </select>
+                    </div>
+
+                    <div class = "question">
+                        <h3>Oxtail</h3>
+                        <p>$8.50</p>
+                        <select id = 'q5'>
+                            <option value = ' '> </option>
+                            <option value = '1'>1</option>
+                            <option value = '2'>2</option>
+                        </select>
+                    </div>
+
+
+
+            <button class="button">ADD TO CART</button>
+
+		</form> 
+                
+            </section>    
+            
+        </main>    
+    </article>    
+    </div>
+</body>
+    <script>
+        var total = ' ';
+
+        function onSubmit(){
+
+                if (q1.value>total){
+                    alert("Added to Cart! Order more?");
+                }
+
+                else if (q2.value>total){
+                    alert("Added to Cart! Check out?");
+                }
+
+                else if (q3.value>total){
+                    alert("Added to Cart! Check out?");
+                }
+
+                else if (q4.value>total){
+                    alert("Added to Cart! Check out?");
+                }
+
+                else if (q5.value>total){
+                    alert("Added to Cart! Check out?");
+                }
+
+                else{
+                    alert("Looks like you didn't select an item. Try again?");
+                }
+
+            }
+    </script>
+    
+    
+</html>
+  

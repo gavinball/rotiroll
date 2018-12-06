@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>
+        Roti Roll    
+    </title> 
+    <meta name="Roti Roll" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/site.css" />
+    </head>
+<body>
+    <div id="container">
+    <article>
+        <header>
+            <a href="index.html"><img id="logo" src="images/rrlogo4.png"></a>
+            <img id="cart" src="images/cart1.png">
+            <nav id="main-nav-bar">
+                <span class="emp"><a href="about.html">ABOUT</a></span>
+                <span><a href="menu.html">MENU</a></span>
+                <span><a href="contact.html">CONTACT</a></span>
+            </nav>
+        </header>    
+        <main>    
+            <section id="banner">
+            <a href="menu.html#specials"><img id="mainimage" src="images/contact.jpg" /></a>
+            </section>
+
+            <section id="contact">
+                <h1>CONTACT US</h1>
+                <div class="container">
+                  <form id="form">
+                    <label for="fname">Name*</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+                    <label for="email">Email Address*</label>
+                    <input type="text" id="email" name="email" placeholder="Your email address.." pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required>
+
+                    <label for="topics">Subject*</label>
+                    <select id="topics" name="topics">
+                      <option value="catering">Corporate Catering and Special Events </option>
+                      <option value="inquiries">General Inquiries</option>
+                      <option value="feedback">Feedback</option>
+                    </select>
+
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+                    <p align="center">
+                    <input id="confirm" type="submit" value="Send Message">
+                    </p>
+                  </form>
+                </div>
+            </section> 
+        </main>
+    </article>
+
+</body>
+</html>
+  
