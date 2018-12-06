@@ -28,6 +28,7 @@ body{
     background-color: #fff;
     margin-left: auto;
     margin-right: auto;
+    min-width: 755px; 
     width: 70%;
 }
 
@@ -280,10 +281,49 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
-@media screen and (max-width: 600px)
-
-
+@media screen and (max-width: 750px)
 {
+#container{
+    background-color: #fff;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 510px; 
+    width: 100%;
+}  
     
+#main-nav-bar {
+    
+    display: block;
+    top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    background-color:#fff;
+    text-align: right;
+    
+}
+
+#main-nav-bar a{
+    
+    font-size: .8em;
+    color: #000;
+    text-decoration: none;
+    padding:0px;
+    
+}
+
+
+#main-nav-bar a:hover{
+    
+    color: gray;
+}
+
+nav span{
+    padding:0px 10px;
+}
+  
     
 }
